@@ -1,0 +1,30 @@
+{
+  "name": "cordova-ble-thermo",
+  "version": "1.0.0",
+  "description": "Bluetooth Low Energy  Plugin For Thermometer",
+  "cordova": {
+    "id": "cordova-ble-thermo",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roybidhan69/cordova-ble-thermo.git"
+  },
+  "keywords": [
+    "cordova",
+    "bluetooth",
+    "thrm",
+    "bluetoothle",
+    "bluetooth le",
+    "low energy",
+    "smart",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "author": "Bidhan Roy <roy.bidhan69@gmail.com>",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/roybidhan69/cordova-ble-thermo#readme"
+}

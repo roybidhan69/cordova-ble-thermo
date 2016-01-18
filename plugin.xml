@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin
+    xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-ble-thermo"
+    version="1.0.0">
+
+    <name>THRM</name>
+    <description>Bluetooth Low Energy  Plugin For Thermometer</description>
+    <license>Apache 2.0</license>
+    <keywords>bluetooth, BLE for thermometer, bluetooth low energy, bluetooth smart</keywords>
+
+    <repo>https://github.com/roybidhan69/cordova-ble-thermo.git</repo>
+   
+
+    <js-module src="www/thermo.js" name="thrm">
+        <clobbers target="thrm" />
+    </js-module>
+
+    
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/widget">
+            <feature name="THRM">
+                <param name="android-package" value="com.airdit.cordova.thermo.plugin.Tempbluetooth"/>
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.BLUETOOTH"/>
+            <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+        </config-file>
+
+        <source-file src="src/android/Tempbluetooth.java"
+            target-dir="src/com/airdit/cordova/thermo/plugin"/>
+        
+
+    </platform>
+
+    
+</plugin>
